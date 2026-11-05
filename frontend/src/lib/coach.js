@@ -18,7 +18,7 @@ import { uid, todayISO, DAYN } from './format.js'
 import { mergePlan } from './plan-share.js'
 import { deleteRoutine } from './routines.js'
 import { POLICIES } from './progression.js'
-import { t, tn } from './i18n.js'
+import { t, tn } from './i18n-core.js'
 
 // Bumping this re-prompts everyone: it means what we share, or who we share it with, changed.
 // 2: the training line names the session notes, which the payload carries and version 1 never
