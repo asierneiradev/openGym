@@ -1,0 +1,70 @@
+{
+  "coach_contract": 1,
+  "opengym_plan": 1,
+  "name": "Torso/pierna 4 días",
+  "summary": "Torso-pierna en 4 días (lunes, martes, jueves, viernes), 65-75 minutos por sesión en gimnasio completo. Cada grupo grande recibe 2 sesiones por semana y, según el recuento de la app (series indirectas ponderadas), entre 10 y 18 series efectivas semanales; hombro queda en ~21 por lo que suman los press. Los básicos usan doble progresión en rangos bajos (5-8) y los accesorios rangos más altos; todo a 1-3 repeticiones en reserva salvo la última serie de aislamiento.",
+  "basedOn": "Perfil de ejemplo: 29 años, 2,5 años entrenando de forma constante, 4 días × 70 min, gimnasio con barra, poleas y máquinas; molestia antigua de hombro derecho sin dolor actual; objetivo hipertrofia con ligero superávit. Historial en la app: sentadilla 5×100 kg, banca 6×80 kg (los pesos los calcula la app a partir del historial; el plan no los fija).",
+  "week": { "1": "ta", "2": "pa", "4": "tb", "5": "pb" },
+  "routines": [
+    {
+      "id": "ta",
+      "name": "Torso A · fuerza",
+      "emoji": "barbell",
+      "prog": "double",
+      "why": "Torso con press horizontal y remo pesados al principio, accesorios después.",
+      "ex": [
+        { "id": "0025", "sets": 4, "mode": "reps", "reps": 8, "repsMin": 5, "prog": "double", "inc": 2.5, "why": "Press de banca con barra: tu historial muestra 80 kg × 6, así que 5-8 continúa en el rango donde ya estás progresando." },
+        { "id": "0027", "sets": 4, "mode": "reps", "reps": 10, "repsMin": 6, "prog": "double", "inc": 2.5, "why": "Remo con barra: tirón horizontal con el mismo número de series que la banca para no descompensar." },
+        { "id": "0405", "sets": 3, "mode": "reps", "reps": 12, "repsMin": 8, "prog": "double", "inc": 2, "why": "Press de hombro sentado con mancuernas en lugar de barra por la molestia antigua de hombro: permite elegir la trayectoria." },
+        { "id": "0198", "sets": 3, "mode": "reps", "reps": 12, "repsMin": 8, "prog": "double", "inc": 2.5, "why": "Jalón en polea: tirón vertical para el dorsal." },
+        { "id": "0334", "sets": 3, "mode": "reps", "reps": 20, "repsMin": 12, "prog": "double", "inc": 1, "sg": "ta1", "why": "Elevaciones laterales en superserie con el tríceps para que la sesión quepa en 70 min." },
+        { "id": "0201", "sets": 3, "mode": "reps", "reps": 15, "repsMin": 10, "prog": "double", "inc": 2.5, "sg": "ta1", "why": "Extensión de tríceps en polea, en superserie con las laterales (no compiten por el mismo músculo)." }
+      ]
+    },
+    {
+      "id": "pa",
+      "name": "Pierna A · sentadilla",
+      "emoji": "legs",
+      "prog": "double",
+      "why": "Pierna con dominante de rodilla: la sentadilla primero, luego bisagra ligera y aislamiento.",
+      "ex": [
+        { "id": "0043", "sets": 4, "mode": "reps", "reps": 8, "repsMin": 5, "prog": "double", "inc": 2.5, "why": "Sentadilla con barra: tu último registro es 100 kg × 5; 5-8 a 1-3 RIR sigue siendo el estímulo principal de cuádriceps y glúteo." },
+        { "id": "0085", "sets": 3, "mode": "reps", "reps": 10, "repsMin": 6, "prog": "double", "inc": 2.5, "why": "Peso muerto rumano: isquios en estiramiento; 3 series para no llegar agotado a la pierna B de 3 días después." },
+        { "id": "0739", "sets": 3, "mode": "reps", "reps": 15, "repsMin": 10, "prog": "double", "inc": 5, "why": "Prensa 45°: volumen de cuádriceps extra con menos fatiga general que más series de sentadilla." },
+        { "id": "0586", "sets": 3, "mode": "reps", "reps": 15, "repsMin": 10, "prog": "double", "inc": 2.5, "why": "Curl femoral tumbado: flexión de rodilla, la otra función del isquio que el rumano no cubre." },
+        { "id": "0605", "sets": 3, "mode": "reps", "reps": 15, "repsMin": 10, "prog": "double", "inc": 5, "why": "Gemelo de pie en máquina: rodilla extendida, gastrocnemio." }
+      ]
+    },
+    {
+      "id": "tb",
+      "name": "Torso B · hipertrofia",
+      "emoji": "dumbbell",
+      "prog": "double",
+      "why": "Torso con empuje vertical y tirones en más repeticiones; complementa el torso A sin repetir ejercicios.",
+      "ex": [
+        { "id": "1162", "sets": 3, "mode": "reps", "reps": 10, "repsMin": 6, "prog": "double", "inc": 2.5, "why": "Press militar con barra: empuje vertical pesado; si la molestia de hombro vuelve, se cambia por press con mancuernas (changes swap-exercise)." },
+        { "id": "0652", "sets": 3, "mode": "reps", "reps": 6, "repsMax": 12, "prog": "linear", "why": "Dominadas: tirón vertical con peso corporal; al llegar a 12 en todas las series la app añade una; después, lastre." },
+        { "id": "0314", "sets": 3, "mode": "reps", "reps": 12, "repsMin": 8, "prog": "double", "inc": 2, "why": "Press inclinado con mancuernas: pecho superior y segundo estímulo de pecho de la semana." },
+        { "id": "0861", "sets": 3, "mode": "reps", "reps": 12, "repsMin": 8, "prog": "double", "inc": 2.5, "why": "Remo sentado en polea: tirón horizontal con menos carga lumbar que el remo con barra del torso A." },
+        { "id": "5609", "sets": 3, "mode": "reps", "reps": 20, "repsMin": 12, "prog": "double", "inc": 2.5, "sg": "tb1", "why": "Face pull: deltoides posterior y manguito, útil con la molestia de hombro; en superserie con el curl." },
+        { "id": "0447", "sets": 3, "mode": "reps", "reps": 12, "repsMin": 8, "prog": "double", "inc": 2.5, "sg": "tb1", "why": "Curl con barra EZ: bíceps directo, 3 series porque los tirones ya aportan." }
+      ]
+    },
+    {
+      "id": "pb",
+      "name": "Pierna B · bisagra",
+      "emoji": "figureStrength",
+      "prog": "double",
+      "why": "Pierna con dominante de cadera: peso muerto primero, unilateral y aislamiento después.",
+      "ex": [
+        { "id": "0032", "sets": 3, "mode": "reps", "reps": 6, "repsMin": 3, "prog": "double", "inc": 5, "why": "Peso muerto: bisagra pesada una vez por semana; pocas series porque es el ejercicio con más fatiga por serie." },
+        { "id": "1060", "sets": 3, "mode": "reps", "reps": 12, "repsMin": 8, "prog": "double", "inc": 5, "why": "Hip thrust con barra: glúteo en acortamiento, complementa al peso muerto." },
+        { "id": "2290", "sets": 3, "mode": "reps", "reps": 20, "repsMin": 16, "side": true, "prog": "double", "inc": 2, "why": "Sentadilla búlgara: cuádriceps y glúteo unilateral, 8-10 por pierna (16-20 en total)." },
+        { "id": "0585", "sets": 3, "mode": "reps", "reps": 15, "repsMin": 10, "prog": "double", "inc": 2.5, "why": "Extensión de cuádriceps: cuádriceps aislado (recto femoral) que sentadilla y prensa no cubren del todo." },
+        { "id": "0599", "sets": 3, "mode": "reps", "reps": 15, "repsMin": 10, "prog": "double", "inc": 2.5, "why": "Curl femoral sentado: isquio en posición alargada, segundo estímulo de la semana." },
+        { "id": "0463", "sets": 3, "mode": "time", "sec": 45, "prog": "time", "inc": 5, "why": "Plancha: core en isométrico al final, cuando ya no compromete los básicos." }
+      ]
+    }
+  ],
+  "customEx": []
+}

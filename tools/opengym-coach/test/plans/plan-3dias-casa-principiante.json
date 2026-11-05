@@ -1,0 +1,54 @@
+{
+  "coach_contract": 1,
+  "opengym_plan": 1,
+  "name": "Full body 3 días · casa",
+  "summary": "Tres sesiones de cuerpo completo (lunes, miércoles, viernes) con mancuernas, banda y peso corporal, unos 55 minutos cada una. Cada día trabaja una sentadilla o zancada, una bisagra, un empuje y un tirón, así que cada músculo grande recibe estímulo 2-3 veces por semana: según el recuento de la app (series indirectas ponderadas) unas 10 series efectivas semanales en pecho y glúteo, 9 en espalda y 6-7 en cuádriceps e isquios, por encima del mínimo de 4 y suficiente para alguien que vuelve a entrenar; si progresa y se recupera, lo primero es subir pierna. Doble progresión en rangos de 8-12 o 10-15 porque las mancuernas ajustables suben de 2 en 2 kg y un salto así es demasiado grande para progresión lineal en ejercicios pequeños.",
+  "basedOn": "Perfil de ejemplo: 34 años, 6 meses entrenando irregular, 3 días × 55 min, mancuernas ajustables hasta 24 kg + banda elástica + banco plano, sin lesiones, objetivo fuerza general y perder ~4 kg. Sin historial en la app.",
+  "week": { "1": "a", "3": "b", "5": "c" },
+  "routines": [
+    {
+      "id": "a",
+      "name": "Full body A",
+      "emoji": "dumbbell",
+      "prog": "double",
+      "why": "Día de sentadilla y press horizontal: los dos patrones que más carga admiten con mancuernas van primero, frescos.",
+      "ex": [
+        { "id": "1760", "sets": 3, "mode": "reps", "reps": 12, "repsMin": 8, "prog": "double", "inc": 2, "why": "Sentadilla goblet: patrón de sentadilla que se aprende rápido y cabe con mancuernas de hasta 24 kg; 8-12 deja margen hasta que la mancuerna máxima se quede corta." },
+        { "id": "0289", "sets": 3, "mode": "reps", "reps": 12, "repsMin": 8, "prog": "double", "inc": 2, "why": "Press de banca con mancuernas: empuje horizontal principal; tienes banco plano y mancuernas, no barra." },
+        { "id": "0293", "sets": 3, "mode": "reps", "reps": 12, "repsMin": 8, "prog": "double", "inc": 2, "why": "Remo inclinado con mancuernas: tirón horizontal para equilibrar el press del mismo día." },
+        { "id": "0334", "sets": 2, "mode": "reps", "reps": 15, "repsMin": 10, "prog": "double", "inc": 1, "why": "Elevaciones laterales: el deltoides lateral apenas trabaja en los press; 10-15 porque con 2 kg de salto un rango bajo se estanca." },
+        { "id": "0276", "sets": 2, "mode": "reps", "reps": 10, "repsMax": 16, "prog": "linear", "why": "Dead bug: antiextensión del core sin carga lumbar; al llegar a 16 se añade una serie." }
+      ]
+    },
+    {
+      "id": "b",
+      "name": "Full body B",
+      "emoji": "figureStrength",
+      "prog": "double",
+      "why": "Día de bisagra y empuje vertical: el peso muerto rumano va primero porque es el que más fatiga si se hace al final.",
+      "ex": [
+        { "id": "1459", "sets": 3, "mode": "reps", "reps": 12, "repsMin": 8, "prog": "double", "inc": 2, "why": "Peso muerto rumano con mancuernas: bisagra de cadera para isquios y glúteo con la carga que tienes en casa." },
+        { "id": "0662", "sets": 3, "mode": "reps", "reps": 8, "repsMax": 15, "prog": "linear", "why": "Flexiones: empuje horizontal con peso corporal; al llegar a 15 en todas las series la app añade una serie (máx. 6) — entonces toca lastre o variante más dura." },
+        { "id": "0405", "sets": 3, "mode": "reps", "reps": 12, "repsMin": 8, "prog": "double", "inc": 2, "why": "Press de hombro sentado con mancuernas: empuje vertical; sentado para no compensar con la zona lumbar." },
+        { "id": "0970", "sets": 3, "mode": "reps", "reps": 6, "repsMax": 10, "prog": "linear", "why": "Dominada asistida con banda: tirón vertical; la banda permite series de 6-10 hoy y se cambia por una más fina cuando salgan 10." },
+        { "id": "3335", "sets": 2, "mode": "reps", "reps": 15, "repsMin": 10, "prog": "double", "inc": 2, "why": "Puente de glúteo con mancuerna: más trabajo de glúteo sin cargar la espalda tras el rumano." }
+      ]
+    },
+    {
+      "id": "c",
+      "name": "Full body C",
+      "emoji": "legs",
+      "prog": "double",
+      "why": "Día unilateral: zancada búlgara y remo a una mano corrigen diferencias entre lados y piden menos peso para el mismo estímulo.",
+      "ex": [
+        { "id": "2290", "sets": 3, "mode": "reps", "reps": 24, "repsMin": 16, "side": true, "prog": "double", "inc": 2, "why": "Sentadilla búlgara con mancuernas: con 24 kg máximo, la versión unilateral sigue siendo dura mucho después de que la goblet se quede corta; 8-12 por pierna (16-24 en total)." },
+        { "id": "0314", "sets": 3, "mode": "reps", "reps": 12, "repsMin": 8, "prog": "double", "inc": 2, "why": "Press inclinado con mancuernas: segundo empuje horizontal de la semana, con otro ángulo." },
+        { "id": "0292", "sets": 3, "mode": "reps", "reps": 24, "repsMin": 16, "side": true, "prog": "double", "inc": 2, "why": "Remo a una mano: tirón horizontal apoyado en el banco, 8-12 por brazo (16-24 en total)." },
+        { "id": "0294", "sets": 2, "mode": "reps", "reps": 15, "repsMin": 10, "prog": "double", "inc": 1, "why": "Curl de bíceps: poco volumen directo porque remos y dominadas ya trabajan el bíceps." },
+        { "id": "1502", "sets": 2, "mode": "reps", "reps": 15, "repsMin": 10, "prog": "off", "why": "Extensión de tríceps con banda: la banda no tiene kilos que subir, así que sin progresión automática; se sube de banda a mano." },
+        { "id": "0463", "sets": 2, "mode": "time", "sec": 30, "prog": "time", "inc": 5, "why": "Plancha: core en isométrico; +5 s cuando todas las series aguantan el tiempo." }
+      ]
+    }
+  ],
+  "customEx": []
+}
